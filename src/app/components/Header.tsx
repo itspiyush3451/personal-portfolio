@@ -49,14 +49,20 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#" className="group">
-                <h1 className="text-2xl font-bold tracking-tight text-foreground">
-                  <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent hover:from-purple-600 hover:via-blue-600 hover:to-indigo-600 transition-all duration-300">
-                    Piyush.
-                  </span>
-                </h1>
-              </a>
-            </div>
+      <a href="#" className="group block">
+        <div className="flex items-center text-3xl font-mono font-bold select-none">
+          <span className="text-indigo-500 group-hover:text-purple-500 transition-all duration-300 transform group-hover:scale-110">
+            &lt;
+          </span>
+          <span className="text-purple-500 group-hover:text-blue-500 transition-all duration-300 mx-1 transform group-hover:scale-110 group-hover:rotate-12">
+            /
+          </span>
+          <span className="text-blue-500 group-hover:text-indigo-500 transition-all duration-300 transform group-hover:scale-110">
+            &gt;
+          </span>
+        </div>
+      </a>
+    </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -74,22 +80,24 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
             
             {/* Theme Toggle and CV - Desktop */}
             <div className="hidden md:flex items-center space-x-4">
-              <ThemeToggle />
-              <button
-                onClick={handleView}
-                className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                aria-label="View CV"
-              >
-                <Eye size={20} />
-              </button>
-              <button
-                onClick={handleDownload}
-                className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                aria-label="Download CV"
-              >
-                <Download size={20} />
-              </button>
-            </div>
+  <ThemeToggle />
+  <button
+    onClick={handleView}
+    className="flex items-center gap-2 text-foreground/80 hover:text-foreground transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-muted/50"
+    aria-label="View CV"
+  >
+    <Eye size={20} />
+    <span className="text-sm font-medium">View CV</span>
+  </button>
+  <button
+    onClick={handleDownload}
+    className="flex items-center gap-2 text-foreground/80 hover:text-foreground transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-muted/50"
+    aria-label="Download CV"
+  >
+    <Download size={20} />
+    <span className="text-sm font-medium">Download CV</span>
+  </button>
+</div>
 
             {/* Mobile/Tablet Navigation Toggle */}
             <div className="md:hidden flex items-center space-x-4">
@@ -140,48 +148,48 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
 
       {/* CV Viewer Modal */}
       {showViewer && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
-          <div className="bg-background rounded-xl max-w-4xl w-full h-[90vh] flex flex-col border border-border shadow-2xl">
-            {/* Modal Header */}
-            <div className="flex justify-between items-center p-6 border-b border-border">
-              <h3 className="text-xl font-semibold text-foreground">CV Preview</h3>
-              <button
-                onClick={() => setShowViewer(false)}
-                className="p-2 hover:bg-muted rounded-full transition-colors text-foreground hover:scale-110"
-              >
-                <X size={24} />
-              </button>
-            </div>
-
-            {/* PDF Viewer */}
-            <div className="flex-1 p-6">
-              <embed
-                src="/Piyush_Yadav_Resume.pdf"
-                type="application/pdf"
-                className="w-full h-full border rounded-lg shadow-inner"
-                title="CV Preview"
-              />
-            </div>
-
-            {/* Modal Footer */}
-            <div className="p-6 border-t border-border flex justify-end gap-3">
-              <button
-                onClick={handleDownload}
-                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-200 font-medium hover:scale-105"
-              >
-                <Download size={16} />
-                Download
-              </button>
-              <button
-                onClick={() => setShowViewer(false)}
-                className="px-6 py-3 bg-muted text-foreground rounded-lg hover:bg-muted/80 transition-colors font-medium"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+  <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+    <div className="bg-background rounded-xl max-w-4xl w-full h-[90vh] flex flex-col border border-border shadow-2xl">
+      {/* Modal Header */}
+      <div className="flex justify-between items-center p-6 border-b border-border">
+        <h3 className="text-xl font-semibold text-foreground">View CV</h3>
+        <button
+          onClick={() => setShowViewer(false)}
+          className="p-2 hover:bg-muted rounded-full transition-colors text-foreground hover:scale-110"
+        >
+          <X size={24} />
+        </button>
+      </div>
+      
+      {/* PDF Viewer */}
+      <div className="flex-1 p-6">
+        <embed
+          src="/Piyush_Yadav_Resume.pdf"
+          type="application/pdf"
+          className="w-full h-full border rounded-lg shadow-inner"
+          title="CV Preview"
+        />
+      </div>
+      
+      {/* Modal Footer */}
+      <div className="p-6 border-t border-border flex justify-end gap-3">
+        <button
+          onClick={handleDownload}
+          className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-200 font-medium hover:scale-105"
+        >
+          <Download size={16} />
+          Download CV
+        </button>
+        <button
+          onClick={() => setShowViewer(false)}
+          className="px-6 py-3 bg-muted text-foreground rounded-lg hover:bg-muted/80 transition-colors font-medium"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
     </>
   );
 };
