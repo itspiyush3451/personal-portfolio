@@ -16,27 +16,27 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/itspiyush3451",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://linkedin.com/in/piyush-yadav-609500234/",
       label: "LinkedIn",
     },
     {
       icon: Twitter,
-      href: "https://twitter.com/yourhandle",
+      href: "https://twitter.com/Piyush3451",
       label: "Twitter/X",
     },
     {
       icon: Instagram,
-      href: "https://instagram.com/yourhandle",
+      href: "https://instagram.com/piyyuss__",
       label: "Instagram",
     },
     {
       icon: Mail,
-      href: "mailto:your.email@example.com",
+      href: "mailto:piyus3451@gmail.com",
       label: "Email",
     },
   ];
@@ -50,10 +50,10 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Piyush
+                Piyush Yadav
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                Passionate developer creating innovative digital solutions.
+                Full-Stack Web developer creating innovative digital solutions.
                 Currently pursuing Master's degree while building amazing
                 projects and collaborating with fellow developers.
               </p>
@@ -98,13 +98,13 @@ const Footer = () => {
               <div className="space-y-3 text-gray-300">
                 <p>
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:piyus3451@gmail.com"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    your.email@example.com
+                    piyus3451@gmail.com
                   </a>
                 </p>
-                <p>Your City, Country</p>
+                <p>Pune, India</p>
                 <p className="text-sm">
                   Available for collaborations and new opportunities
                 </p>
