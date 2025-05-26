@@ -37,10 +37,10 @@ const Hero = () => {
               {/* Intro Text */}
               <div>
                 <p className="text-primary font-medium uppercase tracking-wider mb-3">
-                  HELLO
+                  HELLO,
                 </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-                  I&apos;m <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Piyush</span>
+                  I&apos;m <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Piyush Yadav</span>
                   <br />
                   <span className="text-3xl sm:text-4xl lg:text-5xl font-normal mt-2 block text-foreground/80">
                     a full-stack developer
