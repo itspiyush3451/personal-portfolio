@@ -153,7 +153,7 @@ const Collaborate = () => {
               Let's Talk
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/itspiyush3451"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold"
