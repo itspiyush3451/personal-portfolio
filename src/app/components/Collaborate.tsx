@@ -97,72 +97,28 @@ const Collaborate = () => {
         </div>
 
         {/* What I Bring */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            What I Bring to the Table
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors duration-300"
-              >
-                <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex-shrink-0"></div>
-                <span className="text-gray-700 font-medium">{benefit}</span>
-              </div>
-            ))}
+        <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-12 border border-gray-100">
+      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+        What I Bring to the Table
+      </h3>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        {benefits.map((benefit, index) => (
+          <div
+            key={index}
+            className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors duration-300 group"
+          >
+            <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+            <span className="text-gray-700 font-medium text-sm sm:text-base group-hover:text-gray-900 transition-colors duration-300">
+              {benefit}
+            </span>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
 
-        {/* Current Availability */}
-        <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl shadow-xl p-8 text-white text-center mb-12">
-          <h3 className="text-2xl font-bold mb-4">🚀 Currently Available</h3>
-          <p className="text-lg mb-6 opacity-90">
-            I'm actively looking for collaboration opportunities and exciting
-            projects to work on. Whether it's a short-term project or long-term
-            partnership, I'm ready to contribute!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg font-medium">
-              ✅ Open to freelance projects
-            </span>
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg font-medium">
-              ✅ Available for part-time work
-            </span>
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg font-medium">
-              ✅ Interested in internships
-            </span>
-          </div>
-        </div>
+       
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Ready to Start Something Great?
-          </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            I'm just a message away! Let's discuss your project ideas and see
-            how we can work together to bring them to life.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <MessageCircle className="inline mr-2" size={20} />
-              Let's Talk
-            </a>
-            <a
-              href="https://github.com/itspiyush3451"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold"
-            >
-              <Github className="inline mr-2" size={20} />
-              View My Work
-            </a>
-          </div>
-        </div>
+       
       </div>
     </section>
   );
