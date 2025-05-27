@@ -1,3 +1,4 @@
+// Education section with responsive cards and status indicators
 import { GraduationCap, Calendar, MapPin, BookOpen } from "lucide-react";
 
 const Education = () => {
@@ -26,7 +27,7 @@ const Education = () => {
     <section id="education" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         
-        {/* Section Header */}
+        {/* Section title with gradient underline */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Education
@@ -34,7 +35,7 @@ const Education = () => {
           <div className="w-28 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
         </div>
 
-        {/* Education Cards */}
+        {/* Education timeline with cards */}
         <div className="space-y-8 md:space-y-12">
           {educationData.map((edu, index) => (
             <div key={index} className="group">
@@ -43,7 +44,7 @@ const Education = () => {
                 <div className="p-8 md:p-10">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                     
-                    {/* Left Content */}
+                    {/* Degree info with icon indicators */}
                     <div className="flex-1">
                       <div className="flex items-start gap-4 mb-6">
                         <div className={`p-3 rounded-xl ${
@@ -78,7 +79,7 @@ const Education = () => {
                         </div>
                       </div>
 
-                      {/* Subjects */}
+                      {/* Key subjects with pill-style tags */}
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-3">Key Subjects</h4>
                         <div className="flex flex-wrap gap-2">
@@ -94,7 +95,7 @@ const Education = () => {
                       </div>
                     </div>
 
-                    {/* Right Status */}
+                    {/* Current education status badge */}
                     <div className="lg:text-right">
                       <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold ${
                         edu.isActive
@@ -107,7 +108,7 @@ const Education = () => {
                   </div>
                 </div>
 
-                {/* Bottom Border */}
+                {/* Colored status indicator at bottom of card */}
                 <div className={`h-1 ${
                   edu.isActive 
                     ? 'bg-gradient-to-r from-green-400 to-green-600' 

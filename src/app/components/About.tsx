@@ -210,12 +210,12 @@ const About = () => {
                   {skill.name}
                 </span>
                 
-                {/* Category tag that appears on hover */>
+                {/* Category tag that appears on hover */}
                 <span className="text-xs text-gray-600 mt-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 font-medium group-hover:bg-slate-200 group-hover:text-slate-700">
                   {skill.category}
                 </span>
 
-                {/* Subtle inner shadow that appears on hover */
+                {/* Subtle inner shadow that appears on hover */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-100/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
               </div>
             ))}
