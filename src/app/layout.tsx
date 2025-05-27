@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Piyush Yadav - Portfolio",
   description: "Personal portfolio website of Piyush Yadav",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 // Import ThemeProvider in a separate client component
