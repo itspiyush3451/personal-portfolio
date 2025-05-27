@@ -1,11 +1,11 @@
-// components/Header.tsx
+// Header component with responsive navigation and CV viewer modal
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X, Eye, Download } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 interface HeaderProps {
-  cvUrl?: string; // Optional CV URL prop
+  cvUrl?: string; // Default resume path can be overridden
 }
 
 const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
@@ -13,13 +13,13 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
   const [showViewer, setShowViewer] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll effect for header
+  // Add shadow and background to header when scrolling down
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll); // Cleanup to prevent memory leaks
   }, []);
 
   const navItems = [
@@ -47,7 +47,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
       <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'py-4 bg-background/90 backdrop-blur-md shadow-sm border-b border-border/50' : 'py-6'}`}>
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex justify-between items-center">
-            {/* Logo */}
+            {/* Dev-style logo with animated bracket elements */}
             <div className="flex-shrink-0">
       <a href="#" className="group block">
         <div className="flex items-center text-3xl font-mono font-bold select-none">
@@ -64,7 +64,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
       </a>
     </div>
 
-            {/* Desktop Navigation */}
+            {/* Main navigation - hidden on mobile */}
             <nav className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
                 <a
@@ -78,7 +78,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
               ))}
             </nav>
             
-            {/* Theme Toggle and CV - Desktop */}
+            {/* Theme toggle and resume buttons - desktop only */}
             <div className="hidden md:flex items-center space-x-4">
   <ThemeToggle />
   <button
@@ -99,7 +99,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
   </button>
 </div>
 
-            {/* Mobile/Tablet Navigation Toggle */}
+            {/* Mobile controls with hamburger menu */}
             <div className="md:hidden flex items-center space-x-4">
               <ThemeToggle />
               <button
@@ -126,7 +126,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
             </div>
           </div>
 
-          {/* Mobile/Tablet Navigation */}
+          {/* Collapsible mobile menu with smooth height transition */}
           <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
             <div className="py-4 space-y-6">
               <nav className="flex flex-col space-y-6 items-center">
@@ -146,7 +146,7 @@ const Header = ({ cvUrl = "/Piyush_Yadav_Resume.pdf" }: HeaderProps) => {
         </div>
       </header>
 
-      {/* CV Viewer Modal */}
+      {/* Resume viewer modal with embedded PDF */}
       {showViewer && (
   <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
     <div className="bg-background rounded-xl max-w-4xl w-full h-[90vh] flex flex-col border border-border shadow-2xl">
