@@ -81,13 +81,13 @@ const About = () => {
             {/* Personal intro paragraphs */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                I'm a full-stack developer currently pursuing my Master's degree. 
+                I&apos;m a full-stack developer currently pursuing my Master&apos;s degree. 
                 I build web applications and enjoy solving problems with code.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
                 I work with various technologies and frameworks, picking up new ones 
-                as needed. When not coding, I'm usually debugging something that 
+                as needed. When not coding, I&apos;m usually debugging something that 
                 worked perfectly yesterday.
               </p>
             </div>
@@ -120,13 +120,13 @@ const About = () => {
 
                 {/* Floating thought bubbles with sarcastic messages */}
                 <div className="absolute -top-4 -right-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}>
-                  <div className="text-xs font-mono text-gray-800">"It works on my machine"</div>
+                  <div className="text-xs font-mono text-gray-800">&quot;It works on my machine&quot;</div>
                   <div className="absolute bottom-0 left-4 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-white transform translate-y-full"></div>
                   <div className="absolute bottom-0 left-4 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-gray-800 transform translate-y-full translate-x-px"></div>
                 </div>
 
                 <div className="absolute -bottom-12 -left-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce" style={{animationDelay: '1.5s', animationDuration: '3s'}}>
-                  <div className="text-xs font-mono text-gray-800">"Just one more bug..."</div>
+                  <div className="text-xs font-mono text-gray-800">&quot;Just one more bug...&quot;</div>
                   <div className="absolute top-0 right-4 w-0 h-0 border-l-4 border-r-4 border-b-8 border-transparent border-b-white transform -translate-y-full"></div>
                   <div className="absolute top-0 right-4 w-0 h-0 border-l-4 border-r-4 border-b-8 border-transparent border-b-gray-800 transform -translate-y-full -translate-x-px"></div>
                 </div>

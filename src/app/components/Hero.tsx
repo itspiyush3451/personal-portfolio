@@ -51,7 +51,7 @@ const Hero = () => {
               {/* Bio */}
               <p className="text-lg text-foreground/70 max-w-xl mx-auto lg:mx-0">
                 Crafting digital experiences with modern technologies. 
-                Currently pursuing my Master's degree while building 
+                Currently pursuing my Master&apos;s degree while building 
                 amazing projects.
               </p>
               

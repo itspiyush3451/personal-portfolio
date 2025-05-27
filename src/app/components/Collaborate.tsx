@@ -4,8 +4,6 @@ import {
   Users,
   Lightbulb,
   Rocket,
-  Github,
-  MessageCircle,
 } from "lucide-react";
 
 const Collaborate = () => {
@@ -14,7 +12,7 @@ const Collaborate = () => {
       icon: Code,
       title: "Open Source Projects",
       description:
-        "Let's contribute to meaningful open source projects together. I'm always excited to collaborate on projects that make a positive impact on the developer community.",
+        "Let&apos;s contribute to meaningful open source projects together. I&apos;m always excited to collaborate on projects that make a positive impact on the developer community.",
       color: "from-green-400 to-green-600",
     },
     {
@@ -57,12 +55,12 @@ const Collaborate = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Let's Collaborate
+            Let&apos;s Collaborate
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
           <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-            I'm always excited to work on interesting projects and collaborate
-            with passionate developers. Here's how we can work together to
+            I&apos;m always excited to work on interesting projects and collaborate
+            with passionate developers. Here&apos;s how we can work together to
             create something amazing.
           </p>
         </div>

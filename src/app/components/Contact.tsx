@@ -8,10 +8,7 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
-  Instagram,
   MessageCircle,
-  Clock,
 } from "lucide-react";
 
 const Contact = () => {
@@ -76,21 +73,7 @@ const Contact = () => {
     },
   ];
 
-  const socialLinks = [
-    {
-      icon: Github,
-      label: "GitHub",
-      href: "https://github.com/itspiyush3451",
-      color: "hover:bg-gray-800",
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/piyush-yadav-609500234/",
-      color: "hover:bg-blue-600",
-    },
-   
-  ];
+  // Contact links defined directly where needed
 
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-background relative overflow-hidden">
@@ -104,7 +87,7 @@ const Contact = () => {
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-full px-4 py-2 mb-6">
             <MessageCircle className="text-blue-600" size={18} />
-            <span className="text-sm font-medium text-foreground/80">Let's Talk</span>
+            <span className="text-sm font-medium text-foreground/80">Let&apos;s Talk</span>
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 tracking-tight">
@@ -112,8 +95,8 @@ const Contact = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
           <p className="text-base sm:text-lg text-foreground/70 mt-6 max-w-2xl mx-auto leading-relaxed px-4">
-            Have a project in mind or just want to say hello? I'd love to hear
-            from you. Let's start a conversation and see how we can work
+            Have a project in mind or just want to say hello? I&apos;d love to hear
+            from you. Let&apos;s start a conversation and see how we can work
             together.
           </p>
         </div>
@@ -123,12 +106,12 @@ const Contact = () => {
           <div className="lg:col-span-2 space-y-6 sm:space-y-8">
             <div className="bg-muted/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-border/50">
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-foreground/70 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
-                I'm always excited to discuss new opportunities, collaborate on
-                interesting projects, or simply chat about technology and
-                development.
+                Feel free to reach out through any of these channels. I&apos;m
+                usually quick to respond and always open to interesting
+                conversations and opportunities.
               </p>
 
               {/* Contact Details */}
