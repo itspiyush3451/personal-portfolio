@@ -1,8 +1,9 @@
-import { ExternalLink, Github, Calendar, MapPin, BarChart3 } from "lucide-react";
+// Projects showcase with interactive cards and tech stacks
+import { ExternalLink, Github, Calendar } from "lucide-react";
 import Image from 'next/image';
 
 const Projects = () => {
-  // Technology icon mapping
+  // Map tech names to their respective icon URLs for visual representation
   const techIcons: Record<string, string> = {
     "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
@@ -29,10 +30,10 @@ const Projects = () => {
     "Leaflet": "https://www.vectorlogo.zone/logos/leafletjs/leafletjs-icon.svg"
   };
   
-  // Default icon to use if a technology isn't in our mapping
+  // Fallback icon for any tech not in our mapping
   const defaultIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
   
-  // Project-specific visual components
+  // Custom visuals for each project based on title - uses screenshots with overlay gradient
   const getProjectVisual = (title: string) => {
     if (title.includes("EduForum")) {
       return (
