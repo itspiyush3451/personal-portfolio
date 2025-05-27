@@ -1,4 +1,4 @@
-// Enhanced Technologies Section for About.tsx
+// About section with animated tech skills grid and a bit of personality
 import Image from 'next/image';
 
 const About = () => {
@@ -67,7 +67,7 @@ const About = () => {
 
   return (
     <>
-      {/* About Me Section */}
+      {/* Bio section with animation */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -78,7 +78,7 @@ const About = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
+            {/* Personal intro paragraphs */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
                 I'm a full-stack developer currently pursuing my Master's degree. 
@@ -92,10 +92,10 @@ const About = () => {
               </p>
             </div>
 
-            {/* Sarcastic Animation */}
+            {/* Developer character animation */}
             <div className="relative h-96 flex items-center justify-center">
               <div className="relative">
-                {/* Main animated character */}
+                {/* Custom animated developer character */}
                 <div className="w-64 h-64 relative">
                   {/* Head */}
                   <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-b from-yellow-200 to-yellow-300 rounded-full border-2 border-gray-800">
@@ -194,7 +194,7 @@ const About = () => {
                   <div className="w-full h-full bg-white rounded-xl"></div>
                 </div>
                 
-                {/* Tech icon with sharper background */}
+                {/* Tech icon with subtle gradient background */}
                 <div className="relative mb-4 p-3 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg group-hover:from-slate-50 group-hover:to-gray-100 group-hover:shadow-md transition-all duration-300 border border-gray-200/50">
                   <Image 
                     src={skill.icon} 
@@ -205,17 +205,17 @@ const About = () => {
                   />
                 </div>
                 
-                {/* Tech name with darker colors */}
+                {/* Technology name with hover effect */}
                 <span className="text-sm md:text-base font-bold text-gray-900 text-center group-hover:text-slate-800 transition-colors duration-300">
                   {skill.name}
                 </span>
                 
-                {/* Category badge with darker styling */}
+                {/* Category tag that appears on hover */>
                 <span className="text-xs text-gray-600 mt-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 font-medium group-hover:bg-slate-200 group-hover:text-slate-700">
                   {skill.category}
                 </span>
 
-                {/* Sharp inner shadow on hover */}
+                {/* Subtle inner shadow that appears on hover */
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-100/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
               </div>
             ))}
