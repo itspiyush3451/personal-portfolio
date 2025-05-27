@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Piyush Yadav - Personal Portfolio
 
-## Getting Started
+A modern, responsive personal portfolio website built with Next.js, Tailwind CSS, and TypeScript. This portfolio showcases my projects, skills, education, and provides ways to contact me.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Looks great on all devices (mobile, tablet, desktop)
+- **Dark/Light Mode**: Theme toggle for user preference
+- **Animated UI Elements**: Subtle animations for a modern feel
+- **Interactive Project Showcase**: Highlight projects with technologies used
+- **Contact Form**: Easy way for visitors to reach out
+- **Smart Navigation**: Context-aware scroll button
+- **Resume Viewer**: Embedded PDF viewer for resume/CV
+- **Performance Optimized**: Fast loading times and optimized images
+
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS, CSS Modules
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+- **Version Control**: Git, GitHub
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/                # Next.js app directory
+│   ├── components/     # Reusable UI components
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── public/             # Static assets
+│   ├── Project_UI/     # Project screenshots
+│   └── Piyush_Yadav_Resume.pdf # Resume file
+└── ...                 # Configuration files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js (v18 or later)
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/itspiyush3451/personal-portfolio.git
+   cd personal-portfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚢 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This portfolio is deployed on Vercel. Any pushes to the main branch will automatically trigger a new deployment.
+
+For manual deployment:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+## 📱 Contact
+
+- **Email**: piyus3451@gmail.com
+- **GitHub**: [itspiyush3451](https://github.com/itspiyush3451)
+- **LinkedIn**: [Piyush Yadav](https://www.linkedin.com/in/piyush-yadav-609500234/)
+- **Twitter**: [@Piyush3451](https://twitter.com/Piyush3451)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
