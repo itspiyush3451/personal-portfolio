@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Piyush Yadav - Portfolio",
-  description: "Personal portfolio website of Piyush Yadav",
+  title: "",
+  description: "",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
