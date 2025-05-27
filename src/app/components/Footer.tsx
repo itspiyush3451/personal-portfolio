@@ -77,7 +77,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-800/50 pt-6 text-center">
-          <span className="text-sm text-gray-400"> {currentYear} Piyush Yadav</span>
+          <span className="text-sm text-gray-400"> &copy; {currentYear} Piyush Yadav</span>
         </div>
       </div>
 
