@@ -1,4 +1,4 @@
-# Piyush Yadav - Personal Portfolio
+# Personal Portfolio
 
 A modern, responsive personal portfolio website built with Next.js, Tailwind CSS, and TypeScript. This portfolio showcases my projects, skills, education, and provides ways to contact me.
 
