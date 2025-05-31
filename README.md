@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with Next.js, Tailwind CSS, and TypeScript. This portfolio showcases my projects, skills, education, and provides ways to contact me.
 
-## 🚀 Features
+##  Features
 
 - **Responsive Design**: Looks great on all devices (mobile, tablet, desktop)
 - **Dark/Light Mode**: Theme toggle for user preference
@@ -13,7 +13,7 @@ A modern, responsive personal portfolio website built with Next.js, Tailwind CSS
 - **Resume Viewer**: Embedded PDF viewer for resume/CV
 - **Performance Optimized**: Fast loading times and optimized images
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend**: Next.js, React, TypeScript
 - **Styling**: Tailwind CSS, CSS Modules
@@ -21,7 +21,7 @@ A modern, responsive personal portfolio website built with Next.js, Tailwind CSS
 - **Deployment**: Vercel
 - **Version Control**: Git, GitHub
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 src/
@@ -35,7 +35,7 @@ src/
 └── ...                 # Configuration files
 ```
 
-## 🔧 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -66,7 +66,7 @@ src/
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🚢 Deployment
+##  Deployment
 
 This portfolio is deployed on Vercel. Any pushes to the main branch will automatically trigger a new deployment.
 
@@ -78,7 +78,7 @@ npm run build
 yarn build
 ```
 
-## 📱 Contact
+##  Contact
 
 - **Email**: piyus3451@gmail.com
 - **GitHub**: [itspiyush3451](https://github.com/itspiyush3451)
