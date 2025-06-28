@@ -1,72 +1,72 @@
 // About section with animated tech skills grid and a bit of personality
-import Image from 'next/image';
+import Image from "next/image";
 
 const About = () => {
   const skills = [
-    { 
-      name: "JavaScript", 
+    {
+      name: "JavaScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      category: "Frontend"
+      category: "Frontend",
     },
-    { 
-      name: "TypeScript", 
+    {
+      name: "TypeScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      category: "Frontend"
+      category: "Frontend",
     },
-    { 
-      name: "React", 
+    {
+      name: "React",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      category: "Frontend"
+      category: "Frontend",
     },
-    { 
-      name: "Next.js", 
+    {
+      name: "Next.js",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      category: "Frontend"
+      category: "Frontend",
     },
     {
       name: "Spring",
       icon: "https://www.vectorlogo.zone/logos/springio/springio-ar21.svg",
-      category: "Backend"
-    }
-    { 
-      name: "Node.js", 
+      category: "Backend",
+    },
+    {
+      name: "Node.js",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      category: "Backend"
+      category: "Backend",
     },
-    { 
-      name: "Python", 
+    {
+      name: "Python",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      category: "Backend"
+      category: "Backend",
     },
-    { 
-      name: "C++", 
+    {
+      name: "C++",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-      category: "Programming"
+      category: "Programming",
     },
-    { 
-      name: "Java", 
+    {
+      name: "Java",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      category: "Programming"
+      category: "Programming",
     },
-    { 
-      name: "MongoDB", 
+    {
+      name: "MongoDB",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      category: "Database"
+      category: "Database",
     },
-    { 
-      name: "PostgreSQL", 
+    {
+      name: "PostgreSQL",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      category: "Database"
+      category: "Database",
     },
-    { 
-      name: "Git", 
+    {
+      name: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      category: "Tools"
+      category: "Tools",
     },
-    { 
-      name: "Postman", 
+    {
+      name: "Postman",
       icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-      category: "Tools"
+      category: "Tools",
     },
   ];
 
@@ -86,14 +86,15 @@ const About = () => {
             {/* Personal intro paragraphs */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                I&apos;m a full-stack developer currently pursuing my Master&apos;s degree. 
-                I build web applications and enjoy solving problems with code.
+                I&apos;m a full-stack developer currently pursuing my
+                Master&apos;s degree. I build web applications and enjoy solving
+                problems with code.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                I work with various technologies and frameworks, picking up new ones 
-                as needed. When not coding, I&apos;m usually debugging something that 
-                worked perfectly yesterday.
+                I work with various technologies and frameworks, picking up new
+                ones as needed. When not coding, I&apos;m usually debugging
+                something that worked perfectly yesterday.
               </p>
             </div>
 
@@ -110,28 +111,38 @@ const About = () => {
                     {/* Mouth - changes expressions */}
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-6 h-1 bg-black rounded-full animate-bounce"></div>
                   </div>
-                  
+
                   {/* Body */}
                   <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-16 h-24 bg-gradient-to-b from-blue-400 to-blue-500 rounded-lg border-2 border-gray-800"></div>
-                  
+
                   {/* Arms - typing motion */}
                   <div className="absolute top-28 left-8 w-12 h-3 bg-yellow-300 rounded-full border border-gray-800 animate-pulse origin-right transform rotate-12"></div>
                   <div className="absolute top-28 right-8 w-12 h-3 bg-yellow-300 rounded-full border border-gray-800 animate-pulse origin-left transform -rotate-12"></div>
-                  
+
                   {/* Legs */}
                   <div className="absolute bottom-8 left-6 w-3 h-16 bg-blue-600 rounded-full border border-gray-800"></div>
                   <div className="absolute bottom-8 right-6 w-3 h-16 bg-blue-600 rounded-full border border-gray-800"></div>
                 </div>
 
                 {/* Floating thought bubbles with sarcastic messages */}
-                <div className="absolute -top-4 -right-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}>
-                  <div className="text-xs font-mono text-gray-800">&quot;It works on my machine&quot;</div>
+                <div
+                  className="absolute -top-4 -right-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce"
+                  style={{ animationDelay: "0s", animationDuration: "3s" }}
+                >
+                  <div className="text-xs font-mono text-gray-800">
+                    &quot;It works on my machine&quot;
+                  </div>
                   <div className="absolute bottom-0 left-4 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-white transform translate-y-full"></div>
                   <div className="absolute bottom-0 left-4 w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-gray-800 transform translate-y-full translate-x-px"></div>
                 </div>
 
-                <div className="absolute -bottom-12 -left-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce" style={{animationDelay: '1.5s', animationDuration: '3s'}}>
-                  <div className="text-xs font-mono text-gray-800">&quot;Just one more bug...&quot;</div>
+                <div
+                  className="absolute -bottom-12 -left-8 bg-white border-2 border-gray-800 rounded-2xl p-3 shadow-lg animate-bounce"
+                  style={{ animationDelay: "1.5s", animationDuration: "3s" }}
+                >
+                  <div className="text-xs font-mono text-gray-800">
+                    &quot;Just one more bug...&quot;
+                  </div>
                   <div className="absolute top-0 right-4 w-0 h-0 border-l-4 border-r-4 border-b-8 border-transparent border-b-white transform -translate-y-full"></div>
                   <div className="absolute top-0 right-4 w-0 h-0 border-l-4 border-r-4 border-b-8 border-transparent border-b-gray-800 transform -translate-y-full -translate-x-px"></div>
                 </div>
@@ -141,28 +152,54 @@ const About = () => {
                   <div className="absolute -right-2 top-2 w-4 h-4 border-2 border-gray-800 rounded-full border-l-transparent"></div>
                   {/* Steam */}
                   <div className="absolute -top-2 left-1 w-1 h-4 opacity-60">
-                    <div className="w-1 h-1 bg-gray-400 rounded-full animate-ping" style={{animationDelay: '0s'}}></div>
+                    <div
+                      className="w-1 h-1 bg-gray-400 rounded-full animate-ping"
+                      style={{ animationDelay: "0s" }}
+                    ></div>
                   </div>
                   <div className="absolute -top-2 left-3 w-1 h-4 opacity-60">
-                    <div className="w-1 h-1 bg-gray-400 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
+                    <div
+                      className="w-1 h-1 bg-gray-400 rounded-full animate-ping"
+                      style={{ animationDelay: "0.5s" }}
+                    ></div>
                   </div>
                   <div className="absolute -top-2 left-5 w-1 h-4 opacity-60">
-                    <div className="w-1 h-1 bg-gray-400 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
+                    <div
+                      className="w-1 h-1 bg-gray-400 rounded-full animate-ping"
+                      style={{ animationDelay: "1s" }}
+                    ></div>
                   </div>
                 </div>
 
                 {/* Laptop/Code */}
                 <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-gray-800 rounded-lg border-2 border-gray-900">
                   <div className="w-full h-2/3 bg-green-400 rounded-t-md flex items-center justify-center">
-                    <div className="text-xs font-mono text-green-900 animate-pulse">{'> loading...'}</div>
+                    <div className="text-xs font-mono text-green-900 animate-pulse">
+                      {"> loading..."}
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Background elements */}
-              <div className="absolute top-4 left-4 w-8 h-8 text-2xl animate-spin" style={{animationDuration: '8s'}}>⚙️</div>
-              <div className="absolute bottom-4 right-4 w-8 h-8 text-2xl animate-bounce" style={{animationDelay: '2s'}}>💻</div>
-              <div className="absolute top-1/2 left-2 w-6 h-6 text-xl animate-pulse" style={{animationDelay: '1s'}}>🐛</div>
+              <div
+                className="absolute top-4 left-4 w-8 h-8 text-2xl animate-spin"
+                style={{ animationDuration: "8s" }}
+              >
+                ⚙️
+              </div>
+              <div
+                className="absolute bottom-4 right-4 w-8 h-8 text-2xl animate-bounce"
+                style={{ animationDelay: "2s" }}
+              >
+                💻
+              </div>
+              <div
+                className="absolute top-1/2 left-2 w-6 h-6 text-xl animate-pulse"
+                style={{ animationDelay: "1s" }}
+              >
+                🐛
+              </div>
             </div>
           </div>
         </div>
@@ -179,12 +216,12 @@ const About = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-18">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Technologies I work with
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
             {skills.map((skill, index) => (
               <div
@@ -198,23 +235,23 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-700 via-gray-800 to-slate-900 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 p-[1px]">
                   <div className="w-full h-full bg-white rounded-xl"></div>
                 </div>
-                
+
                 {/* Tech icon with subtle gradient background */}
                 <div className="relative mb-4 p-3 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg group-hover:from-slate-50 group-hover:to-gray-100 group-hover:shadow-md transition-all duration-300 border border-gray-200/50">
-                  <Image 
-                    src={skill.icon} 
-                    alt={skill.name} 
+                  <Image
+                    src={skill.icon}
+                    alt={skill.name}
                     width={48}
                     height={48}
                     className="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110 drop-shadow-sm"
                   />
                 </div>
-                
+
                 {/* Technology name with hover effect */}
                 <span className="text-sm md:text-base font-bold text-gray-900 text-center group-hover:text-slate-800 transition-colors duration-300">
                   {skill.name}
                 </span>
-                
+
                 {/* Category tag that appears on hover */}
                 <span className="text-xs text-gray-600 mt-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 font-medium group-hover:bg-slate-200 group-hover:text-slate-700">
                   {skill.category}
