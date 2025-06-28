@@ -23,6 +23,11 @@ const About = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       category: "Frontend"
     },
+    {
+      name: "Spring",
+      icon: "https://www.vectorlogo.zone/logos/springio/springio-ar21.svg",
+      category: "Backend"
+    }
     { 
       name: "Node.js", 
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
