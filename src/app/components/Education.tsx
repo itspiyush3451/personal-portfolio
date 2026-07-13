@@ -76,10 +76,6 @@ const Education = () => {
           <h2 className="text-4xl font-bold text-slate-900 md:text-5xl">
             Education that keeps moving
           </h2>
-          <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg">
-            Select a milestone to explore the program, subjects, and progress in
-            a more interactive way.
-          </p>
           <div className="mx-auto mt-5 h-1 w-28 rounded-full bg-gradient-to-r from-blue-600 to-violet-600"></div>
         </div>
 

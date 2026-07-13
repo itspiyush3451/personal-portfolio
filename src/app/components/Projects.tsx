@@ -268,8 +268,6 @@ const Projects = () => {
     );
   };
 
-  const featuredProjects = projects.filter((project) => project.featured);
-
   const filters = useMemo(() => {
     const technologySet = new Set<string>();
 
@@ -376,11 +374,11 @@ const Projects = () => {
             Selected work
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            Projects built to feel alive
+            Projects
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-            Explore the filter chips, open a project spotlight, and jump between
-            featured and supporting work without leaving the section.
+            Explore the filter chips, open a project spotlight, and switch
+            between different project types without leaving the section.
           </p>
           <div className="mx-auto mt-6 h-1 w-28 rounded-full bg-gradient-to-r from-blue-600 to-violet-600"></div>
         </div>
@@ -614,9 +612,7 @@ const Projects = () => {
                       {activeProject.date}
                     </span>
                     <span className="text-xs uppercase tracking-[0.25em] text-blue-200/80">
-                      {activeProject.featured
-                        ? "Featured project"
-                        : "Supporting project"}
+                      Project spotlight
                     </span>
                   </div>
 
@@ -691,36 +687,6 @@ const Projects = () => {
               </div>
             </div>
           </aside>
-        </div>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project, index) => (
-            <button
-              key={project.title}
-              type="button"
-              onClick={() => setActiveProject(project)}
-              className={`group rounded-2xl border p-4 text-left transition-all duration-300 hover:-translate-y-1 ${
-                activeProject.title === project.title
-                  ? "border-blue-300 bg-blue-600 text-white shadow-lg shadow-blue-200/40"
-                  : "border-slate-200 bg-white shadow-md hover:border-blue-200 hover:shadow-xl"
-              }`}
-            >
-              <div className="mb-3 flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-[0.25em] opacity-80">
-                  0{index + 1}
-                </span>
-                <Sparkles size={14} className="opacity-70" />
-              </div>
-              <h4 className="text-lg font-bold leading-tight">
-                {project.title}
-              </h4>
-              <p
-                className={`mt-2 text-sm leading-6 ${activeProject.title === project.title ? "text-blue-50" : "text-slate-600"}`}
-              >
-                {project.description}
-              </p>
-            </button>
-          ))}
         </div>
 
         <div className="mt-8 text-center">
