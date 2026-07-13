@@ -4,6 +4,11 @@ import Image from "next/image";
 const About = () => {
   const skills = [
     {
+      name: "Node.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      category: "Backend",
+    },
+    {
       name: "JavaScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       category: "Frontend",
@@ -14,39 +19,64 @@ const About = () => {
       category: "Frontend",
     },
     {
-      name: "React",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      category: "Frontend",
+      name: "NestJS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
+      category: "Framework",
     },
     {
-      name: "Next.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      category: "Frontend",
+      name: "Angular",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+      category: "Framework",
     },
     {
       name: "Spring",
       icon: "https://www.vectorlogo.zone/logos/springio/springio-ar21.svg",
-      category: "Backend",
+      category: "Framework",
     },
     {
-      name: "Node.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      category: "Backend",
+      name: "React",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      category: "Framework",
+    },
+    {
+      name: "Next.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      category: "Framework",
+    },
+    {
+      name: "playwright",
+      icon: "https://playwright.dev/img/playwright-logo.svg",
+      category: "Testing",
+    },
+    {
+      name: "kotlin",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+      category: "Programming Language",
     },
     {
       name: "Python",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      category: "Backend",
+      category: "Programming Language",
     },
     {
       name: "C++",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-      category: "Programming",
+      category: "Programming Language",
     },
     {
       name: "Java",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      category: "Programming",
+      category: "Programming Language",
+    },
+    {
+      name: "flowable",
+      icon: "https://flowable.com/wp-content/uploads/2021/04/flowable-logo-1.png",
+      category: "Workflow Engine",
+    },
+    {
+      name: "mySQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      category: "Database",
     },
     {
       name: "MongoDB",
@@ -86,9 +116,8 @@ const About = () => {
             {/* Personal intro paragraphs */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                I&apos;m a full-stack developer currently pursuing my
-                Master&apos;s degree. I build web applications and enjoy solving
-                problems with code.
+                I build applications and enjoy solving problems with
+                code(SomeTimes(maybe?maybe not)).
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
